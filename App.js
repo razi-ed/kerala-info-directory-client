@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <AppHeader />
+        <AppHeader title={"Home"}/>
       </View>
     );
   }
@@ -16,6 +16,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: '#f5f5f5',
   },
 });

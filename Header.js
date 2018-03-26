@@ -1,17 +1,21 @@
-import React from 'react';
-import { Header } from 'react-native-elements'
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Toolbar, ToolbarBackAction, ToolbarContent, ToolbarAction } from 'react-native-paper';
 
-export default class AppHeader extends React.Component {
+export default class AppHeader extends Component {
+  _goBack = () => {}
+  _onMore = () => {}
+
   render() {
     return (
-      <Header
-        placement="left"
-        backgroundColor="#2DBD60"
-        leftComponent={{ icon: 'menu', color: '#888888' }}
-        centerComponent={{ text: 'MY TITLE', style: { color: '#f5f5f5' } }}
-        rightComponent={{ icon: 'home', color: '#888888' }}
-      />
+      <Toolbar>
+        <ToolbarBackAction
+          onPress={this._goBack}
+        />
+        <ToolbarContent
+          title={this.props.title}
+        />
+        <ToolbarAction icon="more-vert" onPress={this._onMore} />
+      </Toolbar>
     );
   }
 }

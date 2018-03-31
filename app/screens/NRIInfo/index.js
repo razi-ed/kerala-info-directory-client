@@ -5,7 +5,11 @@ import PropTypes from 'prop-types';
 
 class NRIInfo extends Component {
   state = {};
+  static navigationOptions = {
+    title: "NRI Info"
+  }
   render() {
+    console.log(this.props.navigation)
     return (
       <View>
         <Text>NRIInfo</Text>

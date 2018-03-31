@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 
 class KeralaInfo extends Component {
   state = {};
+  static navigationOptions = {
+    title: "Kerala Info"
+  }
   render() {
     return (
       <View>

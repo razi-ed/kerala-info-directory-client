@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 
 class News extends Component {
   state = {};
+  static navigationOptions = {
+    title: "News"
+  }
   render() {
     return (
       <View>

@@ -8,10 +8,12 @@ import LargeButtonContent from '../../components/ImageAndTitle';
 
 class Home extends Component {
   state = {};
-
+  
   _handleNavigation = RouteKey => this.props.navigation.navigate(RouteKey);
   _buttonContent = (image, text) => <LargeButtonContent image={image} title={title} />;
-
+  static navigationOptions = {
+    title: "Home"
+  }
   render() {
     return (
       <View>
@@ -20,7 +22,7 @@ class Home extends Component {
           oncePressed={() => this._handleNavigation('BloodBank')}
           image={require('../../../public/assets/icons/blood-donation.png')}
           title={'Blood Bank'}
-        /> */}
+        /> */}  
         <Button primary onPress={() => this.props.navigation.navigate('GovtInfo')} />
         <Button primary onPress={() => this.props.navigation.navigate('KeralaTourism')}>
           Kerala Tourism

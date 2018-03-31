@@ -5,8 +5,9 @@
 import { StackNavigator } from 'react-navigation';
 
 // import Header from './components/Header';
-import HomeScreen from './screens/Home';
 import BloodBankScreen from './screens/BloodBank';
+import GovtInfoScreen from './screens/GovtInfo';
+import HomeScreen from './screens/Home';
 import KeralaInfoScreen from './screens/KeralaInfo';
 import KeralaTourismScreen from './screens/KeralaTourism';
 import NewsScreen from './screens/News';
@@ -28,6 +29,9 @@ import NRIInfoScreen from './screens/NRIInfo';
 
 export default StackNavigator(
   {
+    GovtInfo: {
+      screen: GovtInfoScreen,
+    },
     Home: {
       screen: HomeScreen,
     },

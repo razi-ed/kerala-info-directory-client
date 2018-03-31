@@ -3,20 +3,20 @@ import { View } from 'react-native';
 import { withTheme, Text } from 'react-native-paper';
 import PropTypes from 'prop-types';
 
-class BloodBank extends Component {
+class GovtInfo extends Component {
   state = {};
   render() {
     return (
       <View>
-        <Text>BloodBank</Text>
+        <Text>GovtInfo</Text>
         <Text>{JSON.stringify(this.props, 2, 2)}</Text>
       </View>
     );
   }
 }
 
-BloodBank.propTypes = {
+GovtInfo.propTypes = {
   theme: PropTypes.object.isRequired,
 };
 
-export default withTheme(BloodBank);
+export default withTheme(GovtInfo);

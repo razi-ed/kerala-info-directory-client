@@ -3,18 +3,25 @@ import { View } from 'react-native';
 import { withTheme, Text, Button } from 'react-native-paper';
 import PropTypes from 'prop-types';
 
+import LargeButton from '../../components/LargeIconButton';
+import LargeButtonContent from '../../components/ImageAndTitle';
+
 class Home extends Component {
   state = {};
+
+  _handleNavigation = RouteKey => this.props.navigation.navigate(RouteKey);
+  _buttonContent = (image, text) => <LargeButtonContent image={image} title={title} />;
+
   render() {
     return (
       <View>
         <Text>Home</Text>
-        <Button primary onPress={() => this.props.navigation.navigate('Home')}>
-          Home
-        </Button>
-        <Button primary onPress={() => this.props.navigation.navigate('BloodBank')}>
-          Blood Bank
-        </Button>
+        {/* <LargeButton
+          oncePressed={() => this._handleNavigation('BloodBank')}
+          image={require('../../../public/assets/icons/blood-donation.png')}
+          title={'Blood Bank'}
+        /> */}
+        <Button primary onPress={() => this.props.navigation.navigate('GovtInfo')} />
         <Button primary onPress={() => this.props.navigation.navigate('KeralaTourism')}>
           Kerala Tourism
         </Button>

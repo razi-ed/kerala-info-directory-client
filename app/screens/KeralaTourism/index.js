@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 
 class KeralaTourism extends Component {
   state = {};
-  render({ theme }) {
-    const { colors } = theme;
+  render() {
     return (
       <View>
         <Text>KeralaTourism</Text>

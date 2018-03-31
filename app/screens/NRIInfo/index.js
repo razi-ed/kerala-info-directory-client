@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 
 class NRIInfo extends Component {
   state = {};
-  render({ theme }) {
-    const { colors } = theme;
+  render() {
     return (
       <View>
         <Text>NRIInfo</Text>

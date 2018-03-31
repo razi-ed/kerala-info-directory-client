@@ -25,14 +25,7 @@
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "pretty-format": "prettier --write '*.js'",
-    "format-code": "yarn run pretty-format && yarn run lint-fix",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "yarn run format-code",
-      "git add"
-    ]
+    "format-code": "yarn run pretty-format && yarn run lint-fix"
   },
   "jest": {
     "preset": "jest-expo"
